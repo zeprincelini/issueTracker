@@ -13,7 +13,8 @@ export class ViewComponent implements OnInit {
     // desc: "",
     // assign: "",
     // priority: ""
-  }]
+  }];
+  index : Number;
   constructor(private route: Router, private dataService: DataService) { }
 
   ngOnInit() {
@@ -24,5 +25,9 @@ export class ViewComponent implements OnInit {
 
   addIssue(){
     this.route.navigate(["/add"]);
+  }
+  close(i){
+    this.index = this.data.indexOf(i);
+    this.dataService.sharedData.splice(i, 1);
   }
 }

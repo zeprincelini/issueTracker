@@ -8,3 +8,30 @@
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+.btn{
+    margin-top: 7px;
+}
+
+.close{
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.assigned, .priority{
+    font-weight: lighter;
+    font-size: 18px;
+}
+.name{
+    color: #28A745;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.level{
+    font-style: italic;
+}
+
+.desc{
+    color: #28A745;
+    font-style: oblique;
+}
