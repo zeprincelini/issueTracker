@@ -1,0 +1,14 @@
+.card{
+    margin-top: 20px;
+}
+h3{
+    color: #28A745;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+label{
+    color: #28A745;
+}
+button{
+    width: 120px;
+}

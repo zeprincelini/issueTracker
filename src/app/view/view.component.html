@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="card wrapper">
+      <div class="card-header"><h3>Current Issues</h3></div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-4" *ngFor = "let val of data">
+            <div class="card">
+              <div class="card-title">
+                <h5 class="assigned">Assigned: {{val.name}}<span class="float-right">close issue</span></h5>
+                <h5 class="priority">Priority: {{val.priority}}</h5>
+              </div>
+              <div class="card-body">
+                <h5>Description</h5>
+                <p>{{val.desc}}</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" (click) = "addIssue()">
+          add issue
+    </button>
+</div>
