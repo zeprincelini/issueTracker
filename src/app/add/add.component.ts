@@ -29,12 +29,10 @@ success: Boolean = false;
   }
   addIssues(){
     console.log(this.data);
-    // this.data.name = this.regForm.value.name;
-    // this.data.desc = this.regForm.value.desc;
-    // this.data.assign = this.regForm.value.assign;
-    // this.data.priority = this.regForm.value.priority;
-    this.dataService.sharedData.push(this.data)
-    console.log(this.dataService.sharedData)
-    //this.regForm.reset();
+    this.dataService.sharedData.push(this.data);
+    console.log(this.dataService.sharedData);
+    setTimeout(()=>{
+      this.success = true;
+    }, 1000)
   }
 }

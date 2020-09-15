@@ -6,6 +6,10 @@ h3{
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.alert{
+    margin-top: 5px;
+}
 label{
     color: #28A745;
 }
